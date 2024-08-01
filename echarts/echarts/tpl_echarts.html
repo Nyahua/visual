@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <script src="{{ js_url }}"></script>
+</head>
+
+<body>
+    <div id="main" style="width: {{ width }}; height:{{ height }};"></div>
+    <script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('main'));
+        var option =  {{ options|tojson }} ;
+        myChart.setOption(option);
+    </script>
+</body>
+
+</html>

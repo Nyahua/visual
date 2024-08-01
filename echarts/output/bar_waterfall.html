@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>waterfall</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+</head>
+
+<body>
+    <div id="main" style="width: 100%; height:600px;"></div>
+    <script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('main'));
+        var option =  {"grid": {"bottom": "3%", "containLabel": true, "left": "3%", "right": "4%", "top": "15%"}, "legend": {"data": ["\u652f\u51fa", "\u6536\u5165"], "right": "5%", "top": "10%"}, "series": [{"data": [0, 900, 1245, 1530, 1376, 1376, 1511, 1689, 1856, 1495, 1292], "emphasis": {"itemStyle": {"barBorderColor": "rgba(0,0,0,0)", "color": "rgba(0,0,0,0)"}}, "itemStyle": {"barBorderColor": "rgba(0,0,0,0)", "color": "rgba(0,0,0,0)"}, "name": "\u8f85\u52a9", "stack": "\u603b\u91cf", "type": "bar"}, {"data": [900, 345, 393, "-", "-", 135, 178, 286, "-", "-", "-"], "label": {"position": "top", "show": true}, "name": "\u6536\u5165", "stack": "\u603b\u91cf", "type": "bar"}, {"data": ["-", "-", "-", 108, 154, "-", "-", "-", 119, 361, 203], "label": {"position": "bottom", "show": true}, "name": "\u652f\u51fa", "stack": "\u603b\u91cf", "type": "bar"}], "title": {"padding": [15, 10], "sublink": "http://e.weibo.com/1341556070/Aj1J2x5a5", "subtext": "From ExcelHome", "text": "\u9636\u68af\u7011\u5e03\u56fe"}, "tooltip": {"axisPointer": {"type": "shadow"}, "formatter": "--x_x--0_0--function(params){var tar;if(params[1].value!==\u0027-\u0027){tar=params[1]}else{tar=params[0]}return tar.name+\u0027\u003cbr/\u003e\u0027+tar.seriesName+\u0027 : \u0027+tar.value}--x_x--0_0--", "trigger": "axis"}, "xAxis": {"data": ["11\u6708 1 \u65e5", "11\u6708 2 \u65e5", "11\u6708 3 \u65e5", "11\u6708 4 \u65e5", "11\u6708 5 \u65e5", "11\u6708 6 \u65e5", "11\u6708 7 \u65e5", "11\u6708 8 \u65e5", "11\u6708 9 \u65e5", "11\u6708 10 \u65e5", "11\u6708 11 \u65e5"], "splitLine": {"show": false}, "type": "category"}, "yAxis": {"type": "value"}} ;
+        myChart.setOption(option);
+    </script>
+</body>
+
+</html>

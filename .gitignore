@@ -1,0 +1,20 @@
+wenv/
+venv/
+.venv/
+env/
+virtualenv/
+.pip/
+.pipenv/
+.pipfile
+.pipfile.lock
+
+# python temp files and cache
+__pycache__/
+.pytest_cache/
+.cache/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg-info/*
