@@ -18,3 +18,4 @@ all hints on visual
 - [Github](https://github.com/python-visualization/folium)
 - [Examples](https://github.com/python-visualization/folium/tree/main/examples)
 - [GeoPands](https://geopandas.org/en/latest/index.html)
+- [Geojson](https://github.com/yezongyang/china-geojson)
