@@ -1,3 +1,10 @@
-jinja2
+numpy
 pandas
 python-calamine
+matplotlib
+seaborn
+plotly
+dash
+folium
+streamlit
+dash_bootstrap_components
